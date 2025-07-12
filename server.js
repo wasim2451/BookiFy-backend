@@ -24,7 +24,7 @@ var instance = new Razorpay({
 //Applying Cross Origin Resource Sharing
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://bookify-kzv1ooujw-wasim2451s-projects.vercel.app/",
     credentials: true
 }));
 
