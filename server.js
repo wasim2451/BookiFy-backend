@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 const crypto = require('crypto');
-
+const PORT = process.env.PORT || 3000;
 const Razorpay = require('razorpay');
 const { log } = require('console');
 //razorPay Instance creation
@@ -215,6 +215,6 @@ app.get('/', (req, res) => {
 });
 
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log("Server is Running !");
 });
